@@ -19,12 +19,11 @@
             </a-assets>
             
             <a-entity
-              animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
-              animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: .1 .1 .1; to: 1 1 1"
+              animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: .1 .1 .1; to: 0 0 0"
               cursor="fuse: true;"
               material="color: #00ffcc; shader: flat"
               position="0 0 -3"
-              geometry="primitive: ring"></a-entity>
+              geometry="primitive: ring; scale: .1 .1 .1"></a-entity>
 
             <a-marker preset="custom" type='pattern' url="pattern_kasugaction.patt">
               <a-box position="0 .5 0" scale="1 .1 1" src="#kasugaction" link="href: https://twitter.com/kasugaction; title: @kasugaction">
