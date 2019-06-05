@@ -18,7 +18,7 @@
             <a-cursor color="#4CC3D9"></a-cursor>
 
             <a-marker preset="custom" type='pattern' url="pattern_kasugaction.patt">
-              <a-box position="0 .5 0" scale=".5 .5 .5" src="#kasugaction" link="href: https://twitter.com/kasugaction; title: @kasugaction">
+              <a-box position="0 .5 0" scale="1 .1 1" src="#kasugaction" link="href: https://twitter.com/kasugaction; title: @kasugaction">
               </a-box>
             </a-marker>
             
@@ -27,7 +27,15 @@
               </a-text>
             </a-marker>
                                                                                                             
-            <a-sky color="#24caff"></a-sky>
+<script>
+	var linkElements = document.getElementsByClassName("link-object");
+	for (var i = 0; i < linkElements.length; i++) {
+		linkElements[i].addEventListener('click', function() {
+			var link = this.getAttribute('data-link');
+			location.href = link;
+		}, false);
+	}
+</script>
             
             <a-entity camera></a-entity>
             
