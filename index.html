@@ -27,7 +27,18 @@
               </a-text>
             </a-marker>
                                                                                                             
-            <a-plane src="#kasugaction" repeat=".5 .5" height="20" width="20"></a-plane>
+            <a-sky color="#24caff"></a-sky>
+            
+            <script>
+	var linkElements = document.getElementsByClassName("link-object");
+	for (var i = 0; i < linkElements.length; i++) {
+		linkElements[i].addEventListener('click', function() {
+			var link = this.getAttribute('data-link');
+			location.href = link;
+		}, false);
+	}
+</script>
+            
             <a-entity camera></a-entity>
             
         </a-scene>
