@@ -34,7 +34,9 @@
                   geometry="primitive: ring" 
                   scale="0.03 0.03 0.03" 
                   material="color: #00ffcc; shader: flat">
-                <a-animation begin="mouseenter" easing="ease-in" attribute="scale" fill="forwards" dur="300" from="0.03 0.03 0.03" to="0.01 0.01 0.01"></a-animation>
+                  animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: .03 .03 .03; to: 0.01 0.01 0.01"
+                  animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: .03 .03 .03"
+
     </a-entity>
             </a-entity>
         </a-scene>
