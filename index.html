@@ -16,15 +16,15 @@
         <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
 
             <a-marker preset="custom" type='pattern' url="pattern_kasugaction.patt">
-              <a-sphere position="0 .5 0" shadow="receive: true" src="kasugaction.png" animation="property: rotation; to: 0 0 360; loop: true; dur: 500" link="href: https://twitter.com/kasugaction; title: @kasugaction">
+              <a-sphere position="0 .5 0" rotation="-90 0 0" shadow="receive: true" src="kasugaction.png" animation="property: rotation; to: 0 0 360; loop: true; dur: 500" link="href: https://twitter.com/kasugaction; title: @kasugaction">
               </a-sphere>
               <a-text value="@kasugaction" position="0 1 .5" align="center" rotation="-90 0 0" color="#7fffff">
               </a-text>
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern_ksgbnd.patt">
-              <a-box position="0 .5 0" shadow="receive: true" src="membeerlist01.png">
-              </a-box>
+              <a-image position="0 -1 0" src="membeerlist01.png">
+              </a-image>
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern-fullsizeoutput_246e.patt">
