@@ -16,8 +16,8 @@
         <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
 
             <a-marker preset="custom" type='pattern' url="pattern_kasugaction.patt">
-              <a-box  position="0 .5 0" rotation="-90 0 0" shadow="receive: true" src="kasugaction.png" animation="property: rotation; to: -90 360 360; loop: true; dur: 5000 easing: easiInOutSine" link="href: https://twitter.com/kasugaction; title: @kasugaction">
-              </a-box>
+              <a-sphere  position="0 .5 0" shadow="receive: true" src="kasugaction.png" animation="property: rotation; to: 0 0 360; loop: true; dur: 5000 easing: easiInOutSine" link="href: https://twitter.com/kasugaction; title: @kasugaction">
+              </a-sphere>
               <a-text value="@kasugaction" position="0 1 .5" align="center" rotation="-90 0 0" color="#7fffff">
               </a-text>
             </a-marker>
@@ -52,9 +52,9 @@
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern-fullsizeoutput_2472.patt">
-                <a-cylinder radius=.5 height=".01" position=".5 0 0" src="Ej7Tg787_400x400.jpg" animation="property: rotation; to: 0 -360 0; loop: true; dur: 200 dir: alternate; easing: easeInOutSine">
+                <a-cylinder radius=.5 height=".01" position=".5 0 0" src="Ej7Tg787_400x400.jpg" animation="property: rotation; to: 0 -360 0; loop: true; dur: 200 dir: alternate; easing: easeInOutSine" animation="property: height; to: 3; loop: true; dur: 500 dir: alternate; easing: easeInOutSine">
                 </a-cylinder>
-                <a-cylinder radius=.5 height=".01" position="-.5 0 0" src="1hYyeMts_400x400.jpg" animation="property: rotation; to: 0 360 0; loop: true; dur: 200 dir: alternate; easing: easeInOutSine">
+                <a-cylinder radius=.5 height="3" position="-.5 0 0" src="1hYyeMts_400x400.jpg" animation="property: rotation; to: 0 360 0; loop: true; dur: 200 dir: alternate; easing: easeInOutSine" animation="property: height; to: .1; loop: true; dur: 500 dir: alternate; easing: easeInOutSine">
                 </a-cylinder>
             </a-marker>
             
