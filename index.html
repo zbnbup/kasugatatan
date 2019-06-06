@@ -16,7 +16,7 @@
         <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
 
             <a-marker preset="custom" type='pattern' url="pattern_kasugaction.patt">
-              <a-entity geometry="primitive: sphere; radius: .5; position: 0 2 0; rotation: -90 0 0;" material="src: kasugaction.png; roughness: 1" light="type: point; intensity: 2.0" animation="property: rotation; from: -90 0 0; to: -90 -360 0; loop: true; dur: 5000" link="href: https://twitter.com/kasugaction;">
+              <a-entity geometry="primitive: sphere; radius: .5; position: 0 2 0; rotation: -90 0 0;" material="src: kasugaction.png; roughness: 1" light="type: point; intensity: 5.0" animation="property: rotation; from: -90 0 0; to: -90 -360 0; loop: true; dur: 5000" link="href: https://twitter.com/kasugaction;">
               </a-entity>
               <a-text value="@kasugaction" position="0 2 .5" height="3" width="3" rotation="-90 0 0" align="center" color="#7fffff">
               </a-text>
@@ -28,17 +28,17 @@
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern-fullsizeoutput_246e.patt">
-              <a-text value="board game" height="10" width="10" align="center" rotation="-90 0 0" color="#ff7f7f">
+              <a-text value="board game" height="20" width="20" align="center" rotation="-90 0 0" color="#ff7f7f">
               </a-text>
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern-fullsizeoutput_246f.patt">
-              <a-text value="crazy" height="10" width="10" align="center" rotation="-90 0 0" color="#ffbf7f">
+              <a-text value="crazy" height="20" width="20" align="center" rotation="-90 0 0" color="#ffbf7f" animation="property: position; to: 0 2 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
               </a-text>
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern-fullsizeoutput_2470.patt">
-              <a-text value="very crazy" height="10" width="10" align="center" rotation="-90 0 0" color="#ffff7f">
+              <a-text value="very crazy" height="30" width="30" align="center" rotation="-90 0 0" color="#ffff7f" animation="property: height; to: 60; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
               </a-text>
             </a-marker>
             
@@ -52,13 +52,13 @@
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern-fullsizeoutput_2472.patt">
-                <a-cylinder radius=.5 height=".01" position=".5 0 .5" src="Ej7Tg787_400x400.jpg" animation="property: rotation; to: 0 -360 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
+                <a-cylinder radius=.5 height=".01" position=".5 0 .5" src="Ej7Tg787_400x400.jpg" animation="property: rotation; from: 0 0 0; to: 0 -360 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
                 </a-cylinder>
-                <a-cylinder radius=.5 height=".01" position="-.5 0 .5" src="1hYyeMts_400x400.jpg" animation="property: rotation; to: 0 360 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
+                <a-cylinder radius=.5 height=".01" position="-.5 0 .5" src="1hYyeMts_400x400.jpg" animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
                 </a-cylinder>
-                <a-cylinder radius=.5 height=".01" position=".5 0 -.5" src="IMG_0903.jpg" animation="property: rotation; to: 0 360 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
+                <a-cylinder radius=.5 height=".01" position=".5 0 -.5" src="IMG_0903.jpg" animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
                 </a-cylinder>
-                <a-cylinder radius=.5 height=".01" position="-.5 0 -.5" src="NASA5-1.jpg" animation="property: rotation; to: 0 -360 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
+                <a-cylinder radius=.5 height=".01" position="-.5 0 -.5" src="NASA5-1.jpg" animation="property: rotation; from: 0 0 0; to: 0 -360 0; loop: true; dur: 300 dir: alternate; easing: easeInOutSine">
                 </a-cylinder>
             </a-marker>
             
