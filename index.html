@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,intial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
         <title>memberlist2019</title>
     </head>
     
@@ -21,7 +22,7 @@
             <a-marker preset="custom" type='pattern' url="pattern_kasugaction.patt">
               <a-box position="0 .5 0" scale="1 1 1" src="#kasugaction" link="href: https://twitter.com/kasugaction; title: @kasugaction">
               </a-box>
-              <a-text value="@kasugaction" position="0 1 1" align="center" rotation="-90 0 0" color="#7fffff">
+              <a-text value="@kasugaction" position="0 1 .5" align="center" rotation="-90 0 0" color="#7fffff">
               </a-text>
             </a-marker>
             
@@ -46,11 +47,11 @@
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern-fullsizeoutput_2471.patt">
-              <a-text value="sakanaction\nASIAN KUNG-FU GENERATION\npassepied\nKANA-BOON\nyorushika\namazarashi" position="0 2.5 -2" align="center" rotation="-90 0 0" color="#7fbfff">
+              <a-text value="sakanaction\nASIAN KUNG-FU GENERATION\npassepied\nKANA-BOON\nyorushika\namazarashi" position="0 2.5 0" align="center" rotation="-90 0 0" color="#7fbfff">
               </a-text>
               <a-text value="UNISON SQUARE GARDEN\nBase Ball Bear\n9mm Parabellum Bullet\nELLEGARDEN\nBUMP OF CHICKEN\nBLUE ENCOUNT\nNothing's Carved In Stone\nLing tosite sigure\nandrop" position="0 1.5 0" align="center" rotation="-90 0 0" color="#7f7fff">
               </a-text>
-              <a-text value="Tokyo Incidents\nBOOM BOOM SATELLITES\nhitorie\nthe cabs\nPeople In The Box\nJYOCHO\nuchu conbini" position="0 .5 2" align="center" rotation="-90 0 0" color="#bf7fff">
+              <a-text value="Tokyo Incidents\nBOOM BOOM SATELLITES\nhitorie\nthe cabs\nPeople In The Box\nJYOCHO\nuchu conbini" position="0 .5 0" align="center" rotation="-90 0 0" color="#bf7fff">
               </a-text>
             </a-marker>
             
@@ -62,7 +63,7 @@
             </a-marker>
             
             <a-marker preset="custom" type='pattern' url="pattern-fullsizeoutput_2473.patt">
-              <a-image src="IMG_9033.png" position="0 .5 0" rotation="-30 0 0">
+              <a-image src="IMG_9033.png" position="-0.7 .5 0" rotation="-30 0 0">
               </a-image>
               <a-image src="名称未設定.jpg" height="1.4"  position="0 .5 0" rotation="-90 0 0">
               </a-image>
@@ -78,7 +79,7 @@
                   material="color: #f8f8ff; shader: flat"
                   animation__click="property: color; startEvents: click; easing: easeInCubic; ; to: #7fff7f"
                   animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1000; from: .03 .03 .03; to: .01 .01 .01"
-                  animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; from: .01 .01 .01; to: .03 .03 .03"
+                  animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 0; from: .01 .01 .01; to: .03 .03 .03"
                 >
             </a-entity>
         </a-scene>
