@@ -16,9 +16,9 @@
         <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
 
             <a-marker preset="custom" type='pattern' url="pattern_kasugaction.patt">
-              <a-entity geometry="primitive: sphere; radius: .5; position: 0 2 0; rotation: -90 0 0;" material="src: kasugaction.png;" animation="property: rotation; from: -90 0 0; to: -90 -360 0; loop: true; dur: 2500" link="href: https://twitter.com/kasugaction;">
+              <a-entity geometry="primitive: sphere; radius: 1; position: 0 2 0; rotation: -90 0 0;" material="src: kasugaction.png;" animation="property: rotation; from: -90 0 0; to: -90 -360 0; loop: true; dur: 2500" link="href: https://twitter.com/kasugaction;">
               </a-entity>
-              <a-text value="@kasugaction" position="0 0 1" height="10" width="10" rotation="-90 0 0" align="center" color="#7fffff">
+              <a-text value="@kasugaction" position="0 0 1.5" height="10" width="10" rotation="-90 0 0" align="center" color="#7fffff">
               </a-text>
             </a-marker>
             
@@ -74,7 +74,7 @@
             
                                                                                                             
             <a-entity camera>
-                <a-entity cursor="fuse: true; fuseTimeout:2000" 
+                <a-entity cursor="fuse: true; fuseTimeout:1000" 
                   position="0 0 -1" 
                   geometry="primitive: ring" 
                   scale="0.03 0.03 0.03" 
